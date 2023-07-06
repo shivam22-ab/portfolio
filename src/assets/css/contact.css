@@ -1,0 +1,58 @@
+.contact{
+    padding: 4rem 0 8rem 0;
+}
+.contact .paragraph{
+    width: 80%;
+}
+.form{
+    width: 80%;
+}
+.form input, .form textarea{
+    width: 100%;
+    padding: 1.2rem 0;
+    border: none;
+    border-bottom: 0.1rem solid #676767;
+    background: inherit;
+    outline: none;
+}
+.form input::placeholder, .form textarea::placeholder{
+    transition: 0.4s ease;
+}
+.form input:focus::placeholder  {
+    transform: translateY(-25px);
+    font-size: 0.6rem;
+}
+.form textarea:focus::placeholder{
+    top:0;
+    font-size: 0.65rem;
+}
+.form textarea::placeholder{
+    position: absolute;
+    bottom: 10%;
+}
+.send{
+    float: right;
+    background: #000 !important;
+    color: #fff;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+}
+.send img{
+    width: 1.2rem;
+}
+
+@media (max-width:767px) {
+    .contact .paragraph{
+        width: 100%;
+    }
+    .contact .form{
+        width: 100%;
+    }
+}
+@media (max-width:600px) {
+    .contact {
+        padding-top: 0;
+    }
+}

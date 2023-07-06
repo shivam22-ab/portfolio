@@ -1,0 +1,534 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+html,body{
+  overflow-x: hidden;
+}
+body{
+    background: #F8F8F8;
+}
+.light-color{
+    color: #525252;
+}
+a{
+  color: #000000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: inline-block;
+  background-image: linear-gradient(to right,#848484, #000000);
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+  background-position: 0 calc(100% -  0px)
+}
+a:hover{
+  color: #000;
+}
+.navigation a:hover{
+  color: #000;
+  background-size: 100% 1.5px;
+}
+.active{
+  cursor: pointer;
+  display: inline-block;
+  background-image: linear-gradient(to right,#848484, #000000);
+  background-size: 100% 1.5px;
+  background-repeat: no-repeat;
+  transition: background-size 0.3s;
+  background-position: 0 calc(100% -  0px)
+}
+
+.active:hover {
+  color: #000;
+  background-size: 0% 1.5px;
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+.title-animation{
+  -webkit-text-fill-color: transparent;
+    -webkit-animation: shine 2s linear infinite;
+    animation: shine 2s linear infinite;
+    background: linear-gradient(90deg,#1c1c1c 0,#fff 10%,#1a1a1a 20%);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+@-webkit-keyframes shine {
+  0% {
+      background-position: -100px
+  }
+
+  60% {
+      background-position: 700px
+  }
+
+  to {
+      background-position: 700px
+  }
+}
+
+@keyframes shine {
+  0% {
+      background-position: -100px
+  }
+
+  60% {
+      background-position: 700px
+  }
+
+  to {
+      background-position: 700px
+  }
+}
+.mid-title{
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.low-title{
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+.small-title{
+  font-size: 1.3rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+.paragraph{
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 2.2rem;
+    letter-spacing: 0.07rem;
+}
+.mid-paragraph{
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 2.2rem;
+  letter-spacing: 0.07rem;
+  color: #5c5c5c;
+}
+.small-paragraph{
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.07rem;
+}
+.pointer{
+  cursor: pointer;
+}
+.box-shadow{
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/* Navigation design */
+@media (max-width:600px) {
+  .navigation{
+    display: none;
+  }
+}
+/* Navigation design */
+/* Sticky navbar */
+.sticky{
+  bottom: 1%;
+  z-index: 1;
+}
+/* Sticky navbar */
+/* Body design */
+.body{
+  height: auto;
+  padding: 6rem 0;
+  
+}
+.home_img {
+  -webkit-animation: profile__animate 4s ease-in-out infinite;
+  animation: profile__animate 4s ease-in-out infinite;
+  background: url(../images/Img.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 9px hsla(0,0%,100%,.3);
+  height: 500px;
+  order: 1;
+  width: 500px;
+}
+
+@-webkit-keyframes profile__animate {
+  0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+
+  50% {
+      border-radius: 45% 75% 85% 55%/65% 75% 45% 75%
+  }
+
+  to {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+}
+
+@keyframes profile__animate {
+  0% {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+
+  50% {
+      border-radius: 45% 75% 85% 55%/65% 75% 45% 75%
+  }
+
+  to {
+      border-radius: 60% 40% 30% 70%/60% 30% 70% 40%
+  }
+}
+
+@media (max-width:1200px) {
+  .home_img {
+    height: 500px;
+    width: 500px;
+    margin-top: 2rem;
+  }
+}
+@media (max-width:600px) {
+  .home_img {
+    height: 400px;
+    width: 400px;
+    margin: 3rem 0;
+  }
+}
+.sticky{
+  width:60%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.sticky img{
+  width: 1.6rem;
+}
+.sticky-logo img{
+  width: 7rem;
+}
+@media(max-width:989px)
+{
+  .sticky{
+    width: 90%;
+  }
+  @-webkit-keyframes shine {
+    0% {
+        background-position: -100px
+    }
+  
+    60% {
+        background-position: 600px
+    }
+  
+    to {
+        background-position: 600px
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+        background-position: -100px
+    }
+  
+    60% {
+        background-position: 600px
+    }
+  
+    to {
+        background-position: 600px
+    }
+  }
+}
+@media(max-width:767px)
+{
+ 
+  .sticky-logo img{
+    width: 5rem;
+  }
+  @-webkit-keyframes shine {
+    0% {
+        background-position: -10px
+    }
+  
+    60% {
+        background-position: 450px
+    }
+  
+    to {
+        background-position: 450px
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+        background-position: -10px
+    }
+  
+    60% {
+        background-position: 450px
+    }
+  
+    to {
+        background-position: 450px
+    }
+  }
+}
+@media(max-width:600px)
+{
+  .body .row{
+    padding: 0 0.25rem;
+  }
+  .sticky{
+    width: 100%;
+  }
+  .sticky, .sticky img{
+    display: block;
+  }
+  .sticky .nav-text{
+    font-weight: 600;
+    font-size: 1.2rem;
+  }
+/* Sticky navbar */
+  /* Font size for titles and paragraphs */
+  .title{
+    font-size: 2rem;
+    line-height: 3rem;
+}
+  .mid-title{
+    font-size: 1.7rem;
+    line-height: 2rem;
+  }
+  .low-title{
+    font-size: 1.6rem;
+  }
+  .small-title{
+    font-size: 1.1rem;
+  }
+  .paragraph{
+      font-size: 1rem;
+      line-height: 2rem;
+  }
+  .mid-paragraph{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+  }
+  a{
+    font-size: 1rem;
+  }
+  
+  /* Font size for titles and paragraphs */
+   .work-details{
+    padding: 2rem 1rem !important;
+  }
+  .nav-text{
+    display: none;
+  }
+}
+@media(max-width:580px)
+{
+  .sticky{
+    padding: 0 1rem;
+  }
+}
+@media(max-width:480px)
+{
+  .sticky img{
+    display: block;
+  }
+  .sticky-logo{
+    display: none;
+  }
+  .title{
+    font-size: 1.7rem;
+    line-height: 2.5rem;
+}
+  .small-title{
+    font-size: 1rem;
+  }
+}
+/* Scroll design */
+
+.scroll{
+  bottom:15%;
+  right:2%;
+  z-index: 3;
+  transform: rotate(90deg);
+}
+.scroll .description{
+  color: #000 !important;
+  font-weight: 600;
+  margin-left: 0.5rem;
+}
+@media (max-width:600px) {
+  .scroll{
+    right: -5%;
+    bottom: 18%;
+  }
+  
+}
+@media (max-width:480px) {
+  .scroll img{
+   width:2.5rem
+  }
+  
+}
+/* Scroll design */
+/* See work and view work design */
+.see-work .small-paragraph {
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  padding: 0.65rem 0.9rem 0.65rem 0.7rem;
+  border-radius: 50px; 
+}
+.see-work .small-paragraph::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: #e3e3e3;
+  transition: left 0.3s;
+  border-radius: 50px; 
+  z-index: -1;
+}
+.see-work .small-paragraph:hover::before {
+  left: 0;
+}
+
+.see-work .small-paragraph .mid-text {
+  background: #e3e3e3;
+  padding: 0.9rem 0.2rem 0.9rem 1rem;
+  border-radius: 50%;
+}
+@media (max-width:480px) {
+  .see-work img{
+    width:2.5rem
+   }
+}
+/* See work  design */
+.contact-links{
+  margin-top: 4rem;
+}
+/* Body design */
+/* Skills design */
+.skills{
+  background: #F0F0F0;
+}
+.skills .paragraph{
+  color: #606060;
+}
+.left-col, .right-col{
+  padding: 0 3rem 0 2rem;
+}
+@media(max-width:600px)
+{
+  .left-col, .right-col{
+    padding: 1rem;
+  }
+  .contact-links{
+    margin-top: 0;
+  }
+}
+/* Skills design */
+/* Work Details */
+.work-details{
+  padding: 5rem 0 5rem 1rem;
+}
+.work-details .container .row .paragraph{
+  color: #606060;
+}
+
+/* Work Details */
+/* Footer design */
+.footer .paragraph{
+  font-weight: 500;
+}
+.social-links img{
+  width: 2rem;
+}
+/* Footer design */
+@media (max-width:1200px) {
+  .body{
+    padding: 6rem 0 4rem 0;
+  }
+  .body .row{
+    justify-content: space-between;
+  }
+  
+}
+@media (max-width:600px) {
+  .body{
+    padding: 3rem 0 0 0;
+  }
+  @-webkit-keyframes shine {
+    0% {
+        background-position: -20px
+    }
+  
+    60% {
+        background-position: 400px
+    }
+  
+    to {
+        background-position: 400px
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+        background-position: -20px
+    }
+  
+    60% {
+        background-position: 400px
+    }
+  
+    to {
+        background-position: 400px
+    }
+  }
+  
+}
+
+@media (max-width:480px) {
+  @-webkit-keyframes shine {
+    0% {
+        background-position: -50px
+    }
+  
+    60% {
+        background-position: 300px
+    }
+  
+    to {
+        background-position: 335px
+    }
+  }
+  
+  @keyframes shine {
+    0% {
+        background-position: -50px
+    }
+  
+    60% {
+        background-position: 300px
+    }
+  
+    to {
+        background-position: 335px
+    }
+  }
+
+}
